@@ -1,0 +1,20 @@
+@import '_vars';
+@import 'modules/landing';
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans:300,400');
+
+body {
+    background-color: $white;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $main-font;
+}
+
+span, a, p, li, ul {
+    font-family: $second-font;
+    font-weight: 300;
+}
+
+.svg-graphic {
+    width: 100%;
+}
