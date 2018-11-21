@@ -42,6 +42,7 @@ svg.name-logo {
     transition:all .5s ease;
     z-index:2;
     position:relative;
+    padding: 65px;
   }
 
   .btn-effect{
@@ -57,6 +58,7 @@ svg.name-logo {
   .button:hover .btn-effect{
     left:0;
   }
+
  .button:hover a{
     color: $white;
   }
