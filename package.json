@@ -1,0 +1,34 @@
+{
+  "name": "baile_joanna_portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobaile/Baile_Joanna_Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "student",
+    "fanshawe",
+    "western",
+    "interactive",
+    "media",
+    "design",
+    "html",
+    "css",
+    "js"
+  ],
+  "author": "Joanna Baile",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jobaile/Baile_Joanna_Portfolio/issues"
+  },
+  "homepage": "https://github.com/jobaile/Baile_Joanna_Portfolio#readme",
+  "dependencies": {
+    "animejs": "^2.2.0"
+  }
+}

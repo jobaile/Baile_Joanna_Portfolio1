@@ -1,2 +1,2 @@
-# Baile_Joanna_Portfolio
-Portfolio
+# Joanna Baile Portfolio
+This is the repository for my portfolio.
