@@ -9,6 +9,7 @@
     <link href="css/main.css" rel="stylesheet"> <!--SASS CSS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
     <link href="https://fonts.googleapis.com/css?family=Lora|Roboto:400,700" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.1/lottie.min.js"></script>
     <script src="node_modules/animejs/anime.min.js"></script>
   </head>
 
@@ -17,19 +18,17 @@
     <!--Nav Information Here-->
       <section class="topNav">
           <nav class="topSticky">
-              <span class="navbar-toggle">
-                  <i class="fas fa-bars"></i>
-              </span>
-              <a href="#" class="logo">logo</a>
+            <div class="navbar-toggle"></div>
+              <a href="#"><img src="images/logo.png" width="60" class="logo"></a>
               <ul class="main-nav">
                   <li>
-                      <a href="#" class="nav-links">About</a>
+                      <a href="#" class="nav-links selected">About</a>
                   </li>
                   <li>
-                      <a href="#" class="nav-links">Portfolio</a>
+                      <a href="portfolio.html" class="nav-links">Portfolio</a>
                   </li>
                   <li>
-                      <a href="#" class="nav-links">Contact</a>
+                      <a href="contact.html" class="nav-links">Contact</a>
                   </li>
               </ul>
           </nav>
@@ -39,11 +38,11 @@
 
       <!--Header Information-->
       <header>
-        <div class="row">
-          <div class="col-12">
-            <h1>About Me</h1>
+        <div class="row" id="aboutMeSection">
+          <div class="col-12 col-md-2 offset-0">
+            <h1>About <span>Me</span></h1>
           </div>
-          <div class="col-12">
+          <div class="col-12 col-md-5 offset-md-1">
             <p>I’m from the Greater Toronto Area studying in London, Ontario 
               to be a web developer. I’m into a lot of different things 
               and one day want to climb Mount Everest even though 
@@ -59,15 +58,15 @@
                   <a href="about.html">Resume</a>
               </div>
           </div>
-          <div class="col-12" id="selfImg"> 
-            <img src="images/self.png">
+          <div class="col-12 col-md-4" id="selfImg"> 
+            <img src="images/jo-self.png">
           </div>
         </div>
       </header>
 
       <!--Skillset-->
       <section id="skillset">
-        <h2 class="text-center">My Skillset</h2>
+        <h2 class="text-center">What I Offer</h2>
         <hr>
           <div id="skill1">
             <img src="">
@@ -86,7 +85,6 @@
               <h3>Social Media Marketing</h3>
               <p>Description</p>
           </div>
-          <hr>
       </section>
       
       <!--Believe-->
@@ -103,9 +101,14 @@
 
       <!--Testimonials-->
       <section id="testimonials">
-        <h2>What They're Saying</h2>
-        <p>Quote</p>
-        <h4>Name/Title</h4>
+        <h2 class="text-center">What They're Saying</h2>
+         <p id="testimonial-quote"><span>"</span>The FIMS USF is a collection of funds that any member of 
+          the Faculty of Information and Media Studies 
+          (including students, staff, and faculty) may 
+          apply to for initiatives that benefit the FIMS 
+          undergraduate student body.<span>"</span></p>
+        <h4 id="testimonial-name">Name</h4>
+        <h5 id="testimonial-title">Title</h5>
       </section>
     </div> <!--Container Ends Here-->
 
@@ -114,10 +117,10 @@
     <footer>
         <div class="row justify-content-center">
           <div class="col-12 col-md-4 offset-md-0">
-            <a href="#"><img src="images/logo.svg" class="footerLogo"></a>
+            <a href="#"><img src="images/logo.png" class="footerLogo"></a>
           </div>
           <div class="col-12 col-md-4 offset-md-0">
-            <p class="text-center">Toronton/London</p>
+            <p class="text-center">Toronto/London</p>
             <p class="text-center">Made with love.</p>
           </div>
           <div class="col-12 col-md-4 offset-md-0">
