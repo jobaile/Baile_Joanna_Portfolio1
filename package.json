@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/jobaile/Baile_Joanna_Portfolio#readme",
   "dependencies": {
-    "animejs": "^2.2.0"
+    "animejs": "^2.2.0",
+    "lottie-web": "^5.4.1"
   }
 }

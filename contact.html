@@ -14,99 +14,50 @@
 
   <body>
   
-    <!--Nav Information Here-->
-      <section class="topNav">
-          <nav class="topSticky">
-              <span class="navbar-toggle">
-                  <i class="fas fa-bars"></i>
-              </span>
-              <a href="#" class="logo">logo</a>
-              <ul class="main-nav">
-                  <li>
-                      <a href="#" class="nav-links">About</a>
-                  </li>
-                  <li>
-                      <a href="#" class="nav-links">Portfolio</a>
-                  </li>
-                  <li>
-                      <a href="#" class="nav-links">Contact</a>
-                  </li>
-              </ul>
-          </nav>
-      </section>
+<!--Nav Information Here-->
+<section class="topNav">
+    <nav class="topSticky">
+      <div class="navbar-toggle"></div>
+        <a href="#"><img src="images/logo.png" width="60" class="logo"></a>
+        <ul class="main-nav">
+            <li>
+                <a href="about.html" class="nav-links">About</a>
+            </li>
+            <li>
+                <a href="portfolio.html" class="nav-links">Portfolio</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links selected">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</section>
 
-    <div class="container-flex"> <!--Container Starts Here-->
+    <div class="container-flex" id="contactPage"> <!--Container Starts Here-->
 
-      <!--Header Information-->
-      <header>
-        <div class="row">
-          <div class="col-12">
-            <h1>About Me</h1>
-          </div>
-          <div class="col-12">
-            <p>I’m from the Greater Toronto Area studying in London, Ontario 
-              to be a web developer. I’m into a lot of different things 
-              and one day want to climb Mount Everest even though 
-              I’m terrified of heights.<br><br>
-
-              I want to be a part of projects that I can be proud of, 
-              while being a part of an amazing team to help further my 
-              career in development. Take some time to look at my work 
-              and if you’re interested in helping me make my dream happen, 
-              let’s get in touch.</p>
-              <div class="button">
-                  <span class="btn-effect"></span>
-                  <a href="about.html">Resume</a>
-              </div>
-          </div>
-          <div class="col-12" id="selfImg"> 
-            <img src="images/self.png">
-          </div>
+      <div class="row">
+        <div class="col-12 col-md-4 offset-lg-2" id="contactText">
+          <h1>Don't be a stranger. Say hello.</h1>
+          <p>Tell me something about you.</p>
         </div>
-      </header>
 
-      <!--Skillset-->
-      <section id="skillset">
-        <h2 class="text-center">My Skillset</h2>
-        <hr>
-          <div id="skill1">
-            <img src="">
-              <h3>Web Development</h3>
-              <p>Description</p>
-          </div>
-          <hr>
-          <div id="skill2">
-            <img src="">
-              <h3>UX/UI Design</h3>
-              <p>Description</p>
-          </div>
-          <hr>
-          <div id="skill3">
-            <img src="">
-              <h3>Social Media Marketing</h3>
-              <p>Description</p>
-          </div>
-          <hr>
-      </section>
-      
-      <!--Believe-->
-      <section id="believe">
-        <div class="row">
-          <div class="col-12 col-md-6">
-              <h2 class="text-center">What Do I Believe?</h2>
-          </div>
-          <div class="col-12 col-md-6">
-              <p>Enter some text here</p>
-          </div>
+        <div class="col-12 col-md-4" id="contactForm">
+            <form class="cf">
+                <div class="half left cf">
+                  <input type="text" id="input-name" placeholder="Name" required>
+                  <input type="text" id="input-subject" placeholder="Subject">
+                </div>
+                <div class="half right cf">
+                    <input type="email" id="input-email" placeholder="Email address" required>
+                </div>  
+                <div>
+                  <textarea name="message" type="text" id="input-message" placeholder="Message" required></textarea>
+                </div>
+                <input type="submit" value="Submit" id="input-submit">
+              </form>
         </div>
-      </section>
+      </div>
 
-      <!--Testimonials-->
-      <section id="testimonials">
-        <h2>What They're Saying</h2>
-        <p>Quote</p>
-        <h4>Name/Title</h4>
-      </section>
     </div> <!--Container Ends Here-->
 
     <!--Footer Information-->
@@ -114,10 +65,10 @@
     <footer>
         <div class="row justify-content-center">
           <div class="col-12 col-md-4 offset-md-0">
-            <a href="#"><img src="images/logo.svg" class="footerLogo"></a>
+            <a href="#"><img src="images/logo.png" class="footerLogo"></a>
           </div>
           <div class="col-12 col-md-4 offset-md-0">
-            <p class="text-center">Toronton/London</p>
+            <p class="text-center">Toronto/London</p>
             <p class="text-center">Made with love.</p>
           </div>
           <div class="col-12 col-md-4 offset-md-0">
