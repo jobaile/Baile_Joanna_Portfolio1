@@ -1,26 +1,19 @@
 (() => {
-
-    let mainNav = document.querySelector('.main-nav');
-    let navBarToggle = document.querySelector('.navbar-toggle');
-
-        // Get the header
-        var header = document.querySelector(".topSticky");
     
-        // Get the offset position of the navbar
-        var sticky = header.offsetTop;
-
-    navBarToggle.addEventListener('click', runToggle);
-        
-    function runToggle(){
-        mainNav.classList.toggle('active');
+    var topNavigation = document.querySelector(".topNav");
+    
+    var strokes = document.querySelectorAll(".strokes"),
+        icon = document.querySelector(".menu"),
+        topNavigation = document.querySelector(".topNav");
+  
+    function transformStart() { //Icon CSS change
+        strokes[0].classList.toggle("animate0")
+        strokes[1].classList.toggle("hide");
+        strokes[2].classList.toggle("animate2");
+        topNavigation.classList.toggle("show");
     }
-
-    window.onscroll = function(){
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-          } else {
-            header.classList.remove("sticky");
-          }   
-    }
+    
+    icon.addEventListener("click", transformStart);
 
 })();
+

@@ -14,55 +14,73 @@
   </head>
 
   <body>
-  
+  <div class="container-flex"> <!--Container Starts Here-->
     <!--Nav Information Here-->
-      <section class="topNav">
-          <nav class="topSticky">
-            <div class="navbar-toggle"></div>
-              <a href="#"><img src="images/logo.png" width="60" class="logo"></a>
-              <ul class="main-nav">
-                  <li>
-                      <a href="#" class="nav-links selected">About</a>
-                  </li>
-                  <li>
-                      <a href="portfolio.html" class="nav-links">Portfolio</a>
-                  </li>
-                  <li>
-                      <a href="contact.html" class="nav-links">Contact</a>
-                  </li>
-              </ul>
+    <div class="topIcon">
+      <img src="images/logo-icon.png" height="80" class="navLogo">
+      <span class="menu">
+        <div class="strokes"></div>
+        <div class="strokes"></div>
+        <div class="strokes"></div>
+      </span>
+    </div>
+  
+      <nav class="topNav stroke">
+         <ul class="topLinks">  
+            <li>
+              <a href="#" class="selected">About</a>
+            </li>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+
+          <div id="socialNav">
+              <h1>Social Links</h1>
+            <ul id="socialNav">
+              <li>
+                <a href="#"><img src="images/linkedin.svg" width="50"></a>
+              </li>
+              <li>
+                  <a href="#"><img src="images/github.svg" width="50"></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/email.svg" width="50"></a>
+                </li>
+            </ul>
+            </div>
           </nav>
-      </section>
+      <!--NAVBAR ENDS HERE-->
 
-    <div class="container-flex"> <!--Container Starts Here-->
-
-      <!--Header Information-->
-      <header>
-        <div class="row" id="aboutMeSection">
-          <div class="col-12 col-md-2 offset-0">
-            <h1>About <span>Me</span></h1>
-          </div>
-          <div class="col-12 col-md-5 offset-md-1">
-            <p>I’m from the Greater Toronto Area studying in London, Ontario 
-              to be a web developer. I’m into a lot of different things 
-              and one day want to climb Mount Everest even though 
-              I’m terrified of heights.<br><br>
-
-              I want to be a part of projects that I can be proud of, 
-              while being a part of an amazing team to help further my 
-              career in development. Take some time to look at my work 
-              and if you’re interested in helping me make my dream happen, 
-              let’s get in touch.</p>
-              <div class="button">
-                  <span class="btn-effect"></span>
-                  <a href="about.html">Resume</a>
+      <section id="aboutMeSection">
+          <div class="row">
+              <div class="col-12 col-md-2">
+                <h1>About <span>Me</span></h1>
               </div>
-          </div>
-          <div class="col-12 col-md-4" id="selfImg"> 
-            <img src="images/jo-self.png">
-          </div>
-        </div>
-      </header>
+              <div class="col-12 col-md-5 offset-md-1">
+                <p>I’m from the Greater Toronto Area studying in London, Ontario 
+                  to be a web developer. I’m into a lot of different things 
+                  and one day want to climb Mount Everest even though 
+                  I’m terrified of heights.<br><br>
+    
+                  I want to be a part of projects that I can be proud of, 
+                  while being a part of an amazing team to help further my 
+                  career in development. Take some time to look at my work 
+                  and if you’re interested in helping me make my dream happen, 
+                  let’s get in touch.</p>
+                  <div class="button">
+                      <span class="btn-effect"></span>
+                      <a href="#" target="_blank">Resume</a>
+                  </div>
+              </div>
+              <div class="col-12 col-md-4" id="selfImg"> 
+                <img src="images/jo-self.png">
+              </div>
+            </div>
+      </section>
 
       <!--Skillset-->
       <section id="skillset">
@@ -90,12 +108,7 @@
       <!--Believe-->
       <section id="believe">
         <div class="row">
-          <div class="col-12 col-md-6">
-              <h2 class="text-center">What Do I Believe?</h2>
-          </div>
-          <div class="col-12 col-md-6">
-              <p>Enter some text here</p>
-          </div>
+          <h2>My Skills</h2>
         </div>
       </section>
 
@@ -116,14 +129,11 @@
 
     <footer>
         <div class="row justify-content-center">
-          <div class="col-12 col-md-4 offset-md-0">
-            <a href="#"><img src="images/logo.png" class="footerLogo"></a>
-          </div>
-          <div class="col-12 col-md-4 offset-md-0">
+          <div class="col-12 offset-md-0">
             <p class="text-center">Toronto/London</p>
-            <p class="text-center">Made with love.</p>
+            <p class="text-center">Made with love</p>
           </div>
-          <div class="col-12 col-md-4 offset-md-0">
+          <div class="col-12 offset-md-0">
             <ul id="footerLinks">
               <li><a href="#"><img src="images/linkedin.svg" class="footersvg"></a></li>
               <li><a href="#"><img src="images/github.svg" class="footersvg"></a></li>

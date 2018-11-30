@@ -1,7 +1,7 @@
 @import '_vars';
 @import 'modules/mixins';
 @import 'modules/landing';
-@import 'modules/about';
+@import 'modules/navbar';
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans:300,400');
 
 * {
@@ -21,10 +21,6 @@ h1, h2, h3, h4, h5 {
 a, p, li, ul {
     font-family: $second-font;
     font-weight: 300;
-}
-
-a:hover {
-    text-decoration: none;
 }
 
 p {
@@ -48,122 +44,21 @@ h3 {
 h4 {
     font-size: 1.5em;
 }
-//Top navigation
 
-section.topNav {
-    background-color: $black;
-}
+//About Content
 
-.topSticky  {
-    font-size: 18px;
-    background-color: #f7f7f7;
-    padding-bottom: 0px;
-    z-index: 999;
-}
-
-.main-nav {
-    list-style-type: none;
-    display: none;
-}
-
-.nav-links,
-.logo {
-    text-decoration: none;
-    color: $black;
-}
-
-.main-nav li {
-    text-align: center;
-    margin: 25px auto;
-}
-
-.logo {
-    display: inline-block;
-    font-size: 22px;
+header {
     margin: 1em;
 }
 
-.logo:hover,
-.nav-links:hover {
-    color: $red;
-}
-
-.navbar-toggle {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-    color: $black;
-    font-size: 24px;
-}
-
-.active {
-    display: block;
-}
-
-.sticky {
-    color: $black;
-    position: fixed;
-    width: 100%;
-    transition: all 1.25 ease;
-    border-bottom: 1px solid $black;
-}
-
-@media screen and (min-width: 768px) {
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0;
-        height: 70px;
-        align-items: center;
-    }
-
-    .main-nav {
-        display: flex;
-        margin: 40px 60px 0 50px;
-        flex-direction: row;
-        float: right;
-    }
-
-    .main-nav li {
-        margin: 0;
-    }
-
-    .nav-links {
-        margin-left: 40px;
-    }
-
-    .logo {
-        margin: 1em 0 1em 3em;
-    }
-
-    .navbar-toggle {
-        display: none;
-    }
-
-    .logo:hover,
-    .nav-links:hover {
-        color: $red;
-    }
-}
-
-
-//About Content
-header {
+section#aboutMeSection {
     padding: 1em 1em 0 1em;
-}
-
-#aboutMeSection {
-    margin-top: 1.5em;
+    background-color: white;
 }
 
 #selfImg img {
     width: 100%;
     margin-bottom: 0;
-}
-
-h1 > span {
-    color: $red;
 }
 
 @media screen and (min-width: 768px) {
@@ -180,16 +75,17 @@ h1 > span {
 
 //Skillset
 section#skillset {
-    background-color: $black;
+    background-color: $grey;
     padding: 2em 3em 2em 3em;
 }
 
 section#skillset h2 {
-    color: $yellow;
+    color: $black;
 }
 
 //Believe
 section#believe {
+    background-color: $white;
     padding: 1em;
 }
 
@@ -199,10 +95,13 @@ section#testimonials {
     padding: 1em;
 }
 
+#testimonial-quote {
+    background-color: rgba(255,255,255,0.5);
+}
+
 
 @media screen and (min-width: 1024px) {
     p#testimonial-quote {
-        background-color: rgba(255,255,255,0.5);
         padding: 1.5em;
         margin: 3em 8em 3em 8em;
     }
@@ -234,58 +133,6 @@ footer ul#footerLinks {
 footer p {
     margin: 0;
 }
-
-
-$duration: .2s;
-$distance: 8px;
-$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
-
-.selected {
-    color: $red;
-}
-nav ul li a {
-  font-size: 20px;
-  color: $black;
-  position: relative;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding-bottom: 8px;
-
-   &:before,
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 2px;
-        left: 0; right: 0;
-        height: 2px;
-        background-color: $red;
-    }
-    &:before {
-        opacity: 0;
-        transform: translateY(- $distance);
-        transition: transform 0s $easeOutBack, opacity 0s;
-    }
-    &:after {
-        opacity: 0;
-        transform: translateY($distance/2);
-        transition: transform $duration $easeOutBack, opacity $duration;
-    }
-    &:hover,
-    &:focus {
-        &:before,
-        &:after {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        &:before {
-            transition: transform $duration $easeOutBack, opacity $duration;
-        }
-        &:after {
-            transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
-        }
-    }
-}
-
 
 //Contact
 #contactPage {
